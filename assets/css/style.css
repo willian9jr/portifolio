@@ -185,7 +185,7 @@ body{
     border-radius:50%;
     position:fixed;
     right:20px;
-    bottom:20px;
+    bottom:50px;
     z-index: 999;
     cursor: pointer;
     display: none;
