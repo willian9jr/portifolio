@@ -1,10 +1,17 @@
+:root{
+    --color1:#09b995
+
+}
+
 body{
     background-color:black;
+    font-family: 'Patrick Hand', cursive;
+    color:#fff
 }
 
 
 .img-logo{
-    width: 100px;
+    width: 100%;
     height: 50px;
 }
 
@@ -14,11 +21,12 @@ body{
 
 .linha-menu{
     height: 80px;
-    background-color:#FF0036;
+    background-color:var(--color1);
 }
 
 .vitrine{
-    margin-top: 50px;
+    margin-top: 100px;
+
 }
 
 .logo-vitrine{
@@ -26,10 +34,19 @@ body{
     align-items:center;
     justify-content:center;
     flex-direction:column;
+    color:var(--color1);
 }
 
-.logo-vitrine h2{
+.logo-vitrine img{
+    margin-bottom: 20px
+}
+
+.logo-vitrine h1{
     margin-top: 20px;
+    text-align:center;
+    color:gray;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 40px;
 }
 
 .foto-profile{
@@ -44,7 +61,7 @@ body{
 }
 
 .about{
-    height: 400px;
+    min-height: 500px;
     display: flex;
 }
 
@@ -53,5 +70,159 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: justify;
+    color:#ccc;
 }
 
+.skils{
+    text-align:center;
+    color:var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 100px;
+}
+
+.img-skils{
+    background-color:var(--color1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s;
+    cursor: pointer;   
+}
+
+.img-skils:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#projetos{
+    text-align:center;
+    color: var(--color1);
+
+}
+
+.card{
+    margin:20px;
+    background-color: var(--color1);
+    color:#fff;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card img{
+    height: 250px;
+    margin: 2px;
+}
+
+.card:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 300px;
+    flex-direction: column;
+}
+
+.contact-img img{
+    width: 50px;
+    margin: 20px;
+}
+
+.contact-img{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.contact-img:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); 
+}
+
+.footer{
+    height: 30px;
+    background-color: var(--color1);
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.footer img{
+    height: 20px;
+    margin: 5px;
+    
+}
+.footer .container-lg{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    body{
+        font-size: 30px 
+    }
+
+
+    .vitrine{
+        margin-top:30%;
+    }
+
+    .vitrine-logo{
+        max-width: 50%;
+    }
+
+    .logo-vitrine h1{
+        margin-bottom: 20%;
+        font-size: 30px
+    }
+
+    .foto-profile img{
+        border-radius: 80%;
+    }
+
+    .text-about{
+        flex: content;
+        padding: 50px;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .img-skils{
+        max-width: 60%;
+        margin-left: 20%;
+    }
+
+    .card img{
+        height: 100%;
+        margin: 0;
+        padding: 5px;
+    }
+
+    #contact .row{
+        flex-direction:row;
+    }
+
+    .footer{
+        font-size: 15px;
+    }
+
+    
+
+    
+}
