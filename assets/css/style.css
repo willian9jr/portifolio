@@ -229,9 +229,14 @@ body{
         border-radius: 80%;
     }
 
+    .about{
+        margin-top: 0px;
+    }
+
     .text-about{
         flex: content;
-        padding: 50px;
+        padding: 0px;
+        margin-bottom: 50px;
     }
 
     .row{
